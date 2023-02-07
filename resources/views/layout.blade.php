@@ -66,81 +66,7 @@
         };
     @endphp
 
-<div class="sidebar">
-            <div class="fixed">
-                <div class="games os-host-flexbox os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"><div class="os-resize-observer-host observed"><div class="os-resize-observer" style="left: 0px; right: auto;"></div></div><div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;"><div class="os-resize-observer"></div></div><div class="os-content-glue" style="margin: 0px;"></div><div class="os-padding"><div class="os-viewport os-viewport-native-scrollbars-invisible"><div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
-                                                                    <div onclick="{{$overlayside('mines')}}" data-game="mines" class="game" data-toggle="tooltip" data-placement="right" title="Mines" data-page-trigger="'/mines'" data-toggle-class="active">
-                            <i class="fas fa-bomb"></i>
-                        </div>
-                                                                    <div onclick="{{$overlayside('dice')}}" data-game="dice" class="game" data-toggle="tooltip" data-placement="right" title="Dice" data-page-trigger="'/dice'" data-toggle-class="active" data-original-title="Dice">
-                            <i class="fa fa-dice"></i>
-                        </div>
-                                                                    <div onclick="{{$overlayside('wheel')}}" data-game="wheel" class="game" data-toggle="tooltip" data-placement="right" title="Wheel" data-page-trigger="'/wheel'" data-toggle-class="active">
-                            
-                        <i class="fad fa-circle-notch"></i>
-                    
-                        </div>
-                                                                    <div onclick="{{$overlayside('coinflip')}}" data-game="coinflip" class="game" data-toggle="tooltip" data-placement="right" title="Coinflip" data-page-trigger="'/coinflip'" data-toggle-class="active">
-                            <i class="fas fa-coin"></i>
-                        </div>
-                                                                    <div onclick="{{$overlayside('tower')}}" data-game="tower" class="game" data-toggle="tooltip" data-placement="right" title="Tower" data-page-trigger="'/tower'" data-toggle-class="active">
-                            <i class="fad fa-chess-rook"></i>
-                        </div>
-                                                                    <div onclick="{{$overlayside('keno')}}" data-game="keno" class="game" data-toggle="tooltip" data-placement="right" title="Keno" data-page-trigger="'/keno'" data-toggle-class="active">
-                            
-                        <i class="icon-keno"></i>
-                    
-                        </div>
-                                                                    <div onclick="{{$overlayside('stairs')}}" data-game="stairs" class="game" data-toggle="tooltip" data-placement="right" title="Stairs" data-page-trigger="'/stairs'" data-toggle-class="active">
-                            
-                        <i class="icon-stairs"></i>
-                    
-                        </div>
-                                                                    <div onclick="{{$overlayside('blackjack')}}" data-game="blackjack" class="game" data-toggle="tooltip" data-placement="right" title="Blackjack" data-page-trigger="'/blackjack'" data-toggle-class="active">
-                            
-                        <i class="icon-blackjack"></i>
-                    
-                        </div>
-                                                                    <div onclick="{{$overlayside('roulette')}}" data-game="roulette" class="game" data-toggle="tooltip" data-placement="right" title="Roulette" data-page-trigger="'/roulette'" data-toggle-class="active">
-                            
-                       <i class="icon-roulette"></i>
-                    
-                        </div>
-                                                                    <div onclick="{{$overlayside('crash')}}" data-game="crash" class="game" data-toggle="tooltip" data-placement="right" title="Crash" data-page-trigger="'/crash'" data-toggle-class="active">
-                            
-                        <i class="icon-crash"></i>
-                    
-                        </div>
-                                                                    <div onclick="{{$overlayside('hilo')}}" data-game="hilo" class="game" data-toggle="tooltip" data-placement="right" title="HiLo" data-page-trigger="'/hilo'" data-toggle-class="active">
-                            
-                        <i class="icon-hilo"></i>
-                    
-                        </div>
-						
-						<div onclick="{{$overlayside('plinko')}}" data-game="plinko" class="game" data-toggle="tooltip" data-placement="right" title="Plinko" data-page-trigger="'/plinko'" data-toggle-class="active">
-                            
-                        <i class="fas fa-ball-pile"></i>
-                    
-                        </div>
-						                                                                    <div onclick="{{$overlayside('cases')}}" data-game="cases" class="game" data-toggle="tooltip" data-placement="right" title="Cases" data-page-trigger="'/cases'" data-toggle-class="active">
-                            <i class="fad fa-box-open"></i>                         @if(\App\Box::isFreeAvailable())
-                            <div class="gg_sidebar-notification-side">1</div>
-                        @endif
-                        </div>
-						 <div @if(Auth::guest()) onclick="$('#b_si').click();" @else onclick="load('/bonus')" @endif data-game="bonus" class="game" data-toggle="tooltip" data-placement="right" title="Bonus" data-page-trigger="'/bonus'" data-toggle-class="active">
-                            <i class="fad fa-coins"></i>
-                        </div>
-                                                        </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track os-scrollbar-track-off"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track os-scrollbar-track-off"><div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
-                <div class="game theme-switcher">
-					<br>
-		<li>
-        <a href="https://vk.com/{{$settings->vk_url}}" target="_blank" class="game mode mode_white tooltip-game tooltipstered">
-          <i class="myicon-vk" style="color:white;opacity:1;"></i>
-        </a>
-      </li>
-                </div>
-            </div>
-        </div>
+
     <!-- <div class="chat" data-role="<?= Auth::guest() ? '-1' : Auth::user()->chat_role ?>" style="min-width: 0; width: 0;">
         <div class="chat_header">
             <span>Онлайн чат</span>
@@ -242,10 +168,10 @@
           <span class="money-block__money-icon myicon-coins tooltip" title="Переключение режима" id="game_demo" onclick="game_demo"></span>
           <span id="money" class="money-block__money-area">{{Auth::user()->money}}</span>
 		  <style>
-		  .money-block__money-area-demo {
-font-size:15px;
+.money-block__money-area-demo {
+    font-size:15px;
 }
-		  .money-block__money-area-demo {
+.money-block__money-area-demo {
     color: #fff;
     font-weight: 800;
     background: #272d39d1;
@@ -334,6 +260,81 @@ width:190px;
     </a> -->
 
   </div>
+  <div class="sidebar">
+            <div class="fixed">
+                <div class="games os-host-flexbox os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"><div class="os-resize-observer-host observed"><div class="os-resize-observer" style="left: 0px; right: auto;"></div></div><div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;"><div class="os-resize-observer"></div></div><div class="os-content-glue" style="margin: 0px;"></div><div class="os-padding"><div class="os-viewport os-viewport-native-scrollbars-invisible"><div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
+                                                                    <div onclick="{{$overlayside('mines')}}" data-game="mines" class="game" data-toggle="tooltip" data-placement="right" title="Mines" data-page-trigger="'/mines'" data-toggle-class="active">
+                            <i class="fas fa-bomb"></i>
+                        </div>
+                                                                    <div onclick="{{$overlayside('dice')}}" data-game="dice" class="game" data-toggle="tooltip" data-placement="right" title="Dice" data-page-trigger="'/dice'" data-toggle-class="active" data-original-title="Dice">
+                            <i class="fa fa-dice"></i>
+                        </div>
+                                                                    <div onclick="{{$overlayside('wheel')}}" data-game="wheel" class="game" data-toggle="tooltip" data-placement="right" title="Wheel" data-page-trigger="'/wheel'" data-toggle-class="active">
+                            
+                        <i class="fad fa-circle-notch"></i>
+                    
+                        </div>
+                                                                    <div onclick="{{$overlayside('coinflip')}}" data-game="coinflip" class="game" data-toggle="tooltip" data-placement="right" title="Coinflip" data-page-trigger="'/coinflip'" data-toggle-class="active">
+                            <i class="fas fa-coin"></i>
+                        </div>
+                                                                    <div onclick="{{$overlayside('tower')}}" data-game="tower" class="game" data-toggle="tooltip" data-placement="right" title="Tower" data-page-trigger="'/tower'" data-toggle-class="active">
+                            <i class="fad fa-chess-rook"></i>
+                        </div>
+                                                                    <div onclick="{{$overlayside('keno')}}" data-game="keno" class="game" data-toggle="tooltip" data-placement="right" title="Keno" data-page-trigger="'/keno'" data-toggle-class="active">
+                            
+                        <i class="icon-keno"></i>
+                    
+                        </div>
+                                                                    <div onclick="{{$overlayside('stairs')}}" data-game="stairs" class="game" data-toggle="tooltip" data-placement="right" title="Stairs" data-page-trigger="'/stairs'" data-toggle-class="active">
+                            
+                        <i class="icon-stairs"></i>
+                    
+                        </div>
+                                                                    <div onclick="{{$overlayside('blackjack')}}" data-game="blackjack" class="game" data-toggle="tooltip" data-placement="right" title="Blackjack" data-page-trigger="'/blackjack'" data-toggle-class="active">
+                            
+                        <i class="icon-blackjack"></i>
+                    
+                        </div>
+                                                                    <div onclick="{{$overlayside('roulette')}}" data-game="roulette" class="game" data-toggle="tooltip" data-placement="right" title="Roulette" data-page-trigger="'/roulette'" data-toggle-class="active">
+                            
+                       <i class="icon-roulette"></i>
+                    
+                        </div>
+                                                                    <div onclick="{{$overlayside('crash')}}" data-game="crash" class="game" data-toggle="tooltip" data-placement="right" title="Crash" data-page-trigger="'/crash'" data-toggle-class="active">
+                            
+                        <i class="icon-crash"></i>
+                    
+                        </div>
+                                                                    <div onclick="{{$overlayside('hilo')}}" data-game="hilo" class="game" data-toggle="tooltip" data-placement="right" title="HiLo" data-page-trigger="'/hilo'" data-toggle-class="active">
+                            
+                        <i class="icon-hilo"></i>
+                    
+                        </div>
+						
+						<div onclick="{{$overlayside('plinko')}}" data-game="plinko" class="game" data-toggle="tooltip" data-placement="right" title="Plinko" data-page-trigger="'/plinko'" data-toggle-class="active">
+                            
+                        <i class="fas fa-ball-pile"></i>
+                    
+                        </div>
+						                                                                    <div onclick="{{$overlayside('cases')}}" data-game="cases" class="game" data-toggle="tooltip" data-placement="right" title="Cases" data-page-trigger="'/cases'" data-toggle-class="active">
+                            <i class="fad fa-box-open"></i>                         @if(\App\Box::isFreeAvailable())
+                            <div class="gg_sidebar-notification-side">1</div>
+                        @endif
+                        </div>
+						 <div @if(Auth::guest()) onclick="$('#b_si').click();" @else onclick="load('/bonus')" @endif data-game="bonus" class="game" data-toggle="tooltip" data-placement="right" title="Bonus" data-page-trigger="'/bonus'" data-toggle-class="active">
+                            <i class="fad fa-coins"></i>
+                        </div>
+                                                        </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track os-scrollbar-track-off"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track os-scrollbar-track-off"><div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
+                <div class="game theme-switcher">
+					<br>
+		<li>
+        <a href="https://vk.com/{{$settings->vk_url}}" target="_blank" class="game mode mode_white tooltip-game tooltipstered">
+          <i class="myicon-vk" style="color:white;opacity:1;"></i>
+        </a>
+      </li>
+                </div>
+            </div>
+        </div>
   @endif
 	</header>
     <main>
