@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-    <div class="chat" data-role="<?= Auth::guest() ? '-1' : Auth::user()->chat_role ?>" style="min-width: 0; width: 0;">
+    <!-- <div class="chat" data-role="<?= Auth::guest() ? '-1' : Auth::user()->chat_role ?>" style="min-width: 0; width: 0;">
         <div class="chat_header">
             <span>Онлайн чат</span>
                 <div class="chat_event_timer tooltip tooltipstered" title="Online" style="display: none; right: unset;"><span id="online">Offline</span></div>
@@ -202,7 +202,7 @@
                 </div>
             @endif
         </div>
-    </div>
+    </div> -->
 	<header>
 	<div class="navbar">
  
@@ -232,9 +232,9 @@
         <i class="myicon-high-five"></i> Авторизация
       </a>
           </div>
-		          <a class="menu-button chat-toggle btn-toggle3" type="button">
+		          <!-- <a class="menu-button chat-toggle btn-toggle3" type="button">
       <i class="myicon-chat" onclick="swapChat()"></i>
-    </a>
+    </a> -->
 		  @else		  
 		  <div class="user">
             <div class="profile-component">
@@ -329,9 +329,9 @@ width:190px;
       <i class="myicon-user"></i>
     </a>
     
-        <a class="menu-button chat-toggle btn-toggle3" type="button" onclick="swapChat()">
+        <!-- <a class="menu-button chat-toggle btn-toggle3" type="button" onclick="swapChat()">
       <i class="myicon-chat"></i>
-    </a>
+    </a> -->
 
   </div>
   @endif

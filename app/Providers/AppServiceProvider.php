@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-$this->app['request']->server->set('HTTPS', true);
+// $this->app['request']->server->set('HTTPS', true);
         //8
     }
 
@@ -24,7 +24,7 @@ $this->app['request']->server->set('HTTPS', true);
      * @return void
      */
     public function boot() {
-	\URL::forceScheme('https');
+	// \URL::forceScheme('https');
         view()->share('settings', Settings::where('id', 1)->first());
     }
 
